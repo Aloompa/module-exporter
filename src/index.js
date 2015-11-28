@@ -5,7 +5,9 @@
 module.exports = (name, code) => {
 
     // Old-School global
-    window[name] = code;
+    if (typeof window !== 'undefined') {
+        window[name] = code;
+    }
 
     // AMD or CommonJS
     if (
