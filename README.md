@@ -2,6 +2,10 @@
 
 Exporting modules for AMD, CommonJS and globally.
 
+## Installation
+
+`npm install module-exporter`
+
 ## API
 
 Just pass your module entry point through the `moduleExporter` function and export it:
